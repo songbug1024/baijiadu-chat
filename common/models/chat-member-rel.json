@@ -1,0 +1,48 @@
+{
+  "name": "ChatMemberRel",
+  "plural": "chat-member-rels",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "strict": true,
+  "options": {
+    "valiDateUpsert": true,
+    "mongodb": {
+      "collection": "chat_member_rel"
+    }
+  },
+  "properties": {
+    "id": {
+      "id": true,
+      "generated": true
+    },
+    "status": {
+      "type": "Number",
+      "default": 1
+    },
+    "created": {
+      "type": "Date",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "Date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "lastMsg": {
+      "type": "belongsTo",
+      "model": "ChatMessage"
+    },
+    "member": {
+      "type": "belongsTo",
+      "model": "ChatMember"
+    },
+    "friend": {
+      "type": "belongsTo",
+      "model": "ChatMember"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

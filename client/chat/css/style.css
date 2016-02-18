@@ -1,0 +1,726 @@
+@-webkit-keyframes rotate {
+  from {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg);
+  }
+}
+.shown {
+  display: block!important;
+}
+.chat-input-bar {
+  transition: height 300ms ease-in-out;
+  -webkit-transition: height 300ms ease-in-out;
+}
+.chat-input-bar.expanded {
+  height: 174px;
+}
+.msg-content.footer-expanded,
+.chatting-list.footer-expanded {
+  bottom: 174px;
+}
+.chat-input-bar .footer-more {
+  position: absolute;
+  top: 52px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  overflow: hidden;
+}
+.chat-input-bar.expanded .footer-more,
+.chat-input-bar.expanded .footer-more .active {
+  display: block;
+}
+.chat-input-bar .qqface,
+.chat-input-bar .more-content-type {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+.face {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/face.png");
+}
+.face.icon1 {
+  background-position: 0 0;
+}
+.face.icon2 {
+  background-position: -24px 0;
+}
+.face.icon3 {
+  background-position: -48px 0;
+}
+.face.icon4 {
+  background-position: -72px 0;
+}
+.face.icon5 {
+  background-position: -96px 0;
+}
+.face.icon6 {
+  background-position: -120px 0;
+}
+.face.icon7 {
+  background-position: -144px 0;
+}
+.face.icon8 {
+  background-position: -168px 0;
+}
+.face.icon9 {
+  background-position: -192px 0;
+}
+.face.icon10 {
+  background-position: -216px 0;
+}
+
+.face.icon11 {
+  background-position: 0 -24px;
+}
+.face.icon12 {
+  background-position: -24px -24px;
+}
+.face.icon13 {
+  background-position: -48px -24px;
+}
+.face.icon14 {
+  background-position: -72px -24px;
+}
+.face.icon15 {
+  background-position: -96px -24px;
+}
+.face.icon16 {
+  background-position: -120px -24px;
+}
+.face.icon17 {
+  background-position: -144px -24px;
+}
+.face.icon18 {
+  background-position: -168px -24px;
+}
+.face.icon19 {
+  background-position: -192px -24px;
+}
+.face.icon20 {
+  background-position: -216px -24px;
+}
+
+.face.icon21 {
+  background-position: 0 48px;
+}
+.face.icon22 {
+  background-position: -24px -48px;
+}
+.face.icon23 {
+  background-position: -48px -48px;
+}
+.face.icon24 {
+  background-position: -72px -48px;
+}
+.face.icon25 {
+  background-position: -96px -48px;
+}
+.face.icon26 {
+  background-position: -120px -48px;
+}
+.face.icon27 {
+  background-position: -144px -48px;
+}
+.face.icon28 {
+  background-position: -168px -48px;
+}
+.face.icon29 {
+  background-position: -192px -48px;
+}
+.face.icon30 {
+  background-position: -216px -48px;
+}
+
+.face.icon31 {
+  background-position: 0 -72px;
+}
+.face.icon32 {
+  background-position: -24px -72px;
+}
+.face.icon33 {
+  background-position: -48px -72px;
+}
+.face.icon34 {
+  background-position: -72px -72px;
+}
+.face.icon35 {
+  background-position: -96px -72px;
+}
+.face.icon36 {
+  background-position: -120px -72px;
+}
+.face.icon37 {
+  background-position: -144px -72px;
+}
+.face.icon38 {
+  background-position: -168px -72px;
+}
+.face.icon39 {
+  background-position: -192px -72px;
+}
+.face.icon40 {
+  background-position: -216px -72px;
+}
+
+.face.icon41 {
+  background-position: 0 -96px;
+}
+.face.icon42 {
+  background-position: -24px -96px;
+}
+.face.icon43 {
+  background-position: -48px -96px;
+}
+.face.icon44 {
+  background-position: -72px -96px;
+}
+.face.icon45 {
+  background-position: -96px -96px;
+}
+.face.icon46 {
+  background-position: -120px -96px;
+}
+.face.icon47 {
+  background-position: -144px -96px;
+}
+.face.icon48 {
+  background-position: -168px -96px;
+}
+.face.icon49 {
+  background-position: -192px -96px;
+}
+.face.icon50 {
+  background-position: -216px -96px;
+}
+
+.face.icon51 {
+  background-position: 0 -120px;
+}
+.face.icon52 {
+  background-position: -24px -120px;
+}
+.face.icon53 {
+  background-position: -48px -120px;
+}
+.face.icon54 {
+  background-position: -72px -120px;
+}
+.face.icon55 {
+  background-position: -96px -120px;
+}
+.face.icon56 {
+  background-position: -120px -120px;
+}
+.face.icon57 {
+  background-position: -144px -120px;
+}
+.face.icon58 {
+  background-position: -168px -120px;
+}
+.face.icon59 {
+  background-position: -192px -120px;
+}
+.face.icon60 {
+  background-position: -216px -120px;
+}
+
+.face.icon61 {
+  background-position: 0 -144px;
+}
+.face.icon62 {
+  background-position: -24px -144px;
+}
+.face.icon63 {
+  background-position: -48px -144px;
+}
+.face.icon64 {
+  background-position: -72px -144px;
+}
+.face.icon65 {
+  background-position: -96px -144px;
+}
+.face.icon66 {
+  background-position: -120px -144px;
+}
+.face.icon67 {
+  background-position: -144px -144px;
+}
+.face.icon68 {
+  background-position: -168px -144px;
+}
+.face.icon69 {
+  background-position: -192px -144px;
+}
+.face.icon70 {
+  background-position: -216px -144px;
+}
+
+.face.icon71 {
+  background-position: 0 -168px;
+}
+.face.icon72 {
+  background-position: -24px -168px;
+}
+.face.icon73 {
+  background-position: -48px -168px;
+}
+.face.icon74 {
+  background-position: -72px -168px;
+}
+.face.icon75 {
+  background-position: -96px -168px;
+}
+.face.icon76 {
+  background-position: -120px -168px;
+}
+.face.icon77 {
+  background-position: -144px -168px;
+}
+.face.icon78 {
+  background-position: -168px -168px;
+}
+.face.icon79 {
+  background-position: -192px -168px;
+}
+.face.icon80 {
+  background-position: -216px -168px;
+}
+
+.face.icon81 {
+  background-position: 0 -192px;
+}
+.face.icon82 {
+  background-position: -24px -192px;
+}
+.face.icon83 {
+  background-position: -48px -192px;
+}
+.face.icon84 {
+  background-position: -72px -192px;
+}
+.face.icon85 {
+  background-position: -96px -192px;
+}
+.face.icon86 {
+  background-position: -120px -192px;
+}
+.face.icon87 {
+  background-position: -144px -192px;
+}
+.face.icon88 {
+  background-position: -168px -192px;
+}
+.face.icon89 {
+  background-position: -192px -192px;
+}
+.face.icon90 {
+  background-position: -216px -192px;
+}
+
+.face.icon91 {
+  background-position: 0 -216px;
+}
+.face.icon92 {
+  background-position: -24px -216px;
+}
+.face.icon93 {
+  background-position: -48px -216px;
+}
+.face.icon94 {
+  background-position: -72px -216px;
+}
+.face.icon95 {
+  background-position: -96px -216px;
+}
+.face.icon96 {
+  background-position: -120px -216px;
+}
+.face.icon97 {
+  background-position: -144px -216px;
+}
+.face.icon98 {
+  background-position: -168px -216px;
+}
+.face.icon99 {
+  background-position: -192px -216px;
+}
+.face.icon100 {
+  background-position: -216px -216px;
+}
+.chat-input-bar .qqface .col .face {
+  position: relative;
+  left: 50%;
+  margin-top: 3px;
+  margin-left: -12px;
+}
+.msg-content {
+  display: none;
+}
+.msg-content.active {
+  display: block;
+}
+.msg-content .messages {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.msg-content .messages .me .send-status {
+  float: right;
+}
+.msg-content .messages .send-status {
+  display: none;
+}
+.msg-content .messages .me .send-status {
+  display: block;
+  font-size: 16px;
+}
+.msg-content .messages .processing .send-status {
+  animation: rotate 1s infinite;
+  -moz-animation: rotate 1s infinite;	/* Firefox */
+  -webkit-animation: rotate 1s infinite;	/* Safari 和 Chrome */
+  -o-animation: rotate 1s infinite;	/* Opera */
+}
+.msg-content .messages .you .cloudBody:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+.msg-content .messages .me .cloudBody:active {
+  background: rgba(178, 207, 115, 0.5);
+}
+.records .face,
+.messages .face {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  margin: 0 1px;
+}
+.msg-content .messages .message .picture {
+  margin: -5px -8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.msg-content .messages .message .picture.has-at {
+  margin: 0 -3px;
+}
+.msg-operations {
+  display: none;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.msg-operations .list {
+  position: absolute;
+  width: 80%;
+  height: 180px;
+  top: 50%;
+  margin-top: -90px;
+  left: 10%;
+}
+.msg-operations .item {
+  height: 61px;
+}
+.msg-operations .item.disabled {
+  color: #A8A7A7;
+  border-color: #ddd;
+  background-color: #F1F1F1;
+}
+.forward-members {
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  z-index: 1000001;
+}
+.forward-members .list_tit {
+  position: absolute;
+  top: 0;
+  height: 48px;
+  width: 100%;
+  line-height: 48px;
+}
+.forward-members .member-content {
+  top: 48px;
+  bottom: 68px;
+}
+.forward-members .to-all-members {
+  height: 48px;
+  padding-left: 10px;
+  font-size: 22px;
+  line-height: 48px;
+  color: #45c01a;
+  border-bottom: #dadada 1px solid;
+}
+.forward-members .info_send {
+  position: absolute;
+  bottom: 0;
+  height: 68px;
+  width: 100%;
+}
+.forward-members .btn_send {
+  margin: 10px 0;
+}
+#private-chat-page .back-btn {
+  position: absolute;
+  top: 0;
+  height: 36px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ebebeb;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 30px;
+  line-height: 36px;
+}
+#private-chat-page .back-btn .ion-ios-volume-high {
+  font-size: 20px;
+}
+#private-chat-page .msg-content {
+  top: 38px;
+}
+.image-preview-container {
+  background-color: rgba(0, 0, 0, .75);
+}
+.image-preview-container .image-preview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.image-preview-container .show-original {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 240px;
+  margin-left: -120px;
+  font-size: 18px;
+  line-height: 36px;
+}
+.image-preview-container .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  line-height: 50px;
+}
+.image-preview-container .show-original,
+.image-preview-container .close {
+  border: 1px solid #FFF;
+  border-radius: 1px;
+  text-align: center;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, .75);
+}
+/*
+* UI样式
+*/
+body {
+  background: none;
+}
+.page {
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
+  /*width: 100%;*/
+  background-color: #ebebeb;
+}
+.load-more {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: #7f7f7f;
+}
+.btn_send.disabled {
+  background-color: rgba(69, 192, 26, 0.4);
+}
+.picture-file {
+  position: relative;
+  top: -4.1em;
+  width: 3.8em;
+  height: 3.8em;
+  opacity: 0;
+}
+/*
+* 样式修改
+*/
+.msg-content {
+  bottom: 52px;
+}
+.input_txt {
+  width: 100%;
+  padding-right: 5px;
+}
+.chatItem .time {
+  width: 120px;
+}
+.list_item.master li.list_sl a {
+  background-color: rgba(69, 192, 26, 0.5);
+}
+/*
+* 共通工具样式
+*/
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  z-index: 1000000;
+  background-color: rgba(0, 0, 0, .4);
+}
+.modal .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 36px;
+  margin-top: -18px;
+  margin-left: -250px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+.loading {
+  background-image: url(../images/loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.toast {
+  position: absolute;
+  left: 50%;
+  bottom: 55px;
+  margin-left: -36px;
+  width: 72px;
+  height: 28px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #e6e5eb;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 1000000;
+  text-align: center;
+  line-height: 28px;
+}
+.notice {
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+  color: #e6e5eb;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 1000000;
+  text-align: center;
+  line-height: 36px;
+}
+.notice-dot {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  border-radius: 90%;
+  width: 8px;
+  height: 8px;
+  display: none;
+  color: #fff;
+  background-color: #ff0000;
+}
+.notice-dot.active {
+  display: block;
+}
+.list_item .list_name,
+.list_item .list_zw {
+  margin-right: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list_item .date-str {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  color: #999;
+  font-size: 14px;
+}
+.list_item .notice-dot {
+  width: auto;
+  height: auto;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+.bar-header .to-name img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: 6px;
+  margin-right: 5px;
+  /*border-radius: 5px;*/
+}
+.chatting-list {
+  left: -130px;
+  right: auto;
+  bottom: 52px;
+  border-right: 1px solid #bfbfbf;
+  background-color: #FFFFFF;
+  transition: left 300ms ease-in-out, bottom 300ms ease-in-out;
+  -webkit-transition: left 300ms ease-in-out, bottom 300ms ease-in-out;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.chatting-list.expanded {
+  left: 0;
+}
+.chatting-list,
+.chatting-list>.scroll {
+  overflow: visible;
+}
+.chatting-item {
+  position: relative;
+  padding: 10px 10px 0 10px;
+  width: 80px;
+  height: 80px;
+  border-bottom: 1px solid #dadada;
+}
+.chatting-item:last-child {
+  border-bottom: none;
+}
+.chatting-item .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.chatting-item .notice-dot {
+  top: 4px;
+  right: 4px;
+}
+.chatting-item.active {
+  z-index: 10;
+  background-color: #ebebeb;
+  border-right: 4px solid #33cd5f;
+}
+.show-chatting {
+  position: relative;
+}
+.show-chatting .notice-dot {
+  top: 0;
+}

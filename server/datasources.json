@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "duorou",
+    "username": "root",
+    "password": "Qm20150106!duorou",
+    "name": "mongodb",
+    "connector": "mongodb"
+  }
+}

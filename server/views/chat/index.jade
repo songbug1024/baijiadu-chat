@@ -1,0 +1,27 @@
+extends ../layouts/base
+
+block metas
+  meta(name="Author" content="百家花圃")
+  meta(name="keywords" content="百家花圃,多肉,多肉植物,多肉植物平台")
+  meta(name="Description" content="百家花圃平台在线聊天系统")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+block title
+  title 百家花圃平台在线聊天系统
+
+block stylesheets
+  link(rel="stylesheet" type="text/css" href="/css/ionic.min.css")
+  link(rel="stylesheet" type="text/css" href="/css/main.css")
+  link(rel="stylesheet" type="text/css" href="/css/style.css")
+
+block scripts
+  #member-data(data-value="#{member ? JSON.stringify(member) : ''}")
+  #to-data(data-value="#{to ? JSON.stringify(to) : ''}")
+  #route-data(data-value="#{initRoute || ''}")
+
+  script(type="text/javascript" src="/js/libs/ionic/1.0.0/ionic.min.js")
+  script(type="text/javascript" src="/js/dist/bundle.js")
+
+  script(type="text/javascript" src="/js/libs/jquery.fileupload/5.42.3/vendor/jquery.ui.widget.js")
+  script(type="text/javascript" src="/js/libs/jquery.fileupload/5.42.3/jquery.iframe-transport.js")
+  script(type="text/javascript" src="/js/libs/jquery.fileupload/5.42.3/jquery.fileupload.js")

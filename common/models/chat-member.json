@@ -1,0 +1,80 @@
+{
+  "name": "ChatMember",
+  "plural": "chat-members",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "strict": true,
+  "options": {
+    "valiDateUpsert": true,
+    "mongodb": {
+      "collection": "chat_member"
+    }
+  },
+  "properties": {
+    "id": {
+      "id": true,
+      "generated": true
+    },
+    "userId": {
+      "type": "String",
+      "require": true
+    },
+    "displayName": {
+      "type": "String",
+      "require": true
+    },
+    "avatar": {
+      "type": "String",
+      "require": true
+    },
+    "desc": {
+      "type": "String"
+    },
+    "roleName": {
+      "type": "String"
+    },
+    "tel": {
+      "type": "String"
+    },
+    "realName": {
+      "type": "String"
+    },
+    "status": {
+      "type": "Number",
+      "default": 1
+    },
+    "created": {
+      "type": "Date",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "Date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "members": {
+      "type": "hasMany",
+      "model": "ChatMemberRel",
+      "foreignKey": "memberId"
+    },
+    "friends": {
+      "type": "hasMany",
+      "model": "ChatMemberRel",
+      "foreignKey": "friendId"
+    },
+    "sentMessages": {
+      "type": "hasMany",
+      "model": "ChatMessage",
+      "foreignKey": "senderId"
+    },
+    "receivedMessages": {
+      "type": "hasMany",
+      "model": "ChatMessage",
+      "foreignKey": "receiverId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

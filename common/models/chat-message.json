@@ -1,0 +1,60 @@
+{
+  "name": "ChatMessage",
+  "plural": "chat-messages",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "valiDateUpsert": true,
+    "mongodb": {
+      "collection": "chat_message"
+    }
+  },
+  "properties": {
+    "id": {
+      "id": true,
+      "generated": true
+    },
+    "displayName": {
+      "type": "String"
+    },
+    "avatar": {
+      "type": "String"
+    },
+    "content": {
+      "type": "String"
+    },
+    "contentType": {
+      "type": "String"
+    },
+    "status": {
+      "type": "Number",
+      "default": 1
+    },
+    "created": {
+      "type": "Date",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "Date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sender": {
+      "type": "belongsTo",
+      "model": "ChatMember"
+    },
+    "receiver": {
+      "type": "belongsTo",
+      "model": "ChatMember"
+    },
+    "lastMemberRel": {
+      "type": "hasOne",
+      "model": "ChatMemberRel",
+      "foreignKey": "lastMsgId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
